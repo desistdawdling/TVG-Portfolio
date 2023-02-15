@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beginner Acrylic Painting</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #5dd7f3, #9d97bb);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        text-shadow: lightslategray 0px 4px;
+      }
+
+      hr {
+        max-width: 800px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 24px;
+      }
+
+      p {
+        display: block;
+        padding: 15px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.2);
+        max-width: 700px;
+        line-height: 30px;
+      }
+
+      p:hover {
+        background: rgba(255, 255, 255, 0.4);
+      }
+
+      img {
+        display: block;
+        margin: 30px auto;
+        border: 1px solid #534c77;
+        border-radius: 15px;
+        height: auto;
+        max-width: 100%;
+      }
+
+      button {
+        font-size: 20px;
+        display: block;
+        margin: 30px auto;
+        padding: 15px 20px;
+        background: #534c77;
+        color: #ffffff;
+        border-radius: 35px;
+        transition: 200ms linear;
+      }
+
+      button:hover {
+        background: #ffffff;
+        color: #534c77;
+        cursor: pointer;
+      }
+
+      .quicklinks {
+        display: block;
+        text-align: center;
+        max-width: 750px;
+        padding: 10px 0px 30px 0px;
+        margin: 0 auto;
+        border: 2px solid #534c77;
+        box-shadow: 3px 5px;
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .signature {
+        text-align: center;
+        padding: 65px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Acrylic Painting for Beginners</h1>
+    <hr />
+    <h2><em>How and Where to Start!</em></h2>
+
+    <p>
+      It's easier than you think to pick up a brush and create beautiful works
+      of art in this modern age of technology. Not only is it easier than ever
+      to get supplies (more on this later), there is a plethora of artists that
+      create step-by-step painting tutorials for free on YouTube.
+      <br /><br />The first that comes to mind is a wonderful painter named
+      Cinnamon Cooney. She goes by the Art Sherpa online and is also the
+      daughter of another artist, Ginger Cook. While both have successful
+      channels, Cinnamon's is more beginner friendly. Once you get a handle on
+      the brush and feel a bit more confident, Ginger, Angela, and Jane are
+      fantastic channels to go to. Feeling a bit more ambitious? Check out
+      Ginger's site where she teaches painting through personal critiques of
+      work.
+    </p>
+
+    <img
+      src="https://media.istockphoto.com/id/636761588/photo/used-brushes-on-an-artists-palette-of-colorful-oil-paint.jpg?s=612x612&w=0&k=20&c=38YQxVJVWnNfvGtlb7AXMx_ItyHZMEdmWenNkWNQ91g="
+    />
+
+    <p>
+      As I mentioned earlier, it's easier than ever to get supplies. AND if you
+      are worried about the Cadmium in the paint colors, they now come in
+      cadmium free versions! You can order your paint online from chain craft
+      stores such as <a href="https://Michaels.com">Michaels</a>, or specialty
+      stores such as <a href="https://www.utrechtart.com/">Utrecht Art</a> or
+      <a
+        href="
+Jerry's Artarama: Art Supplies and Materials
+https://www.jerrysartarama.com"
+        >Jerry's Artarama</a
+      >. Painting is also much more popular - not only can you shop online at
+      <a href="https://Michaels.com" target="_blank">Michaels</a> but in person
+      as well.
+      <a href="https://www.michaels.com/store-locator" target="_blank">
+        Find your local Michaels location.</a
+      >
+    </p>
+    <h3>Get Painting Today</h3>
+    <button>I want to paint!</button>
+    <div class="quicklinks">
+      <h2>TUTORIALS</h2>
+      <span
+        ><a href="https://www.youtube.com/@TheArtSherpa" target="_blank"
+          >The Art Sherpa
+        </a>
+        |
+        <a
+          href="https://www.youtube.com/playlist?list=PLXUkNk1HRolHw3ED-2PdIbzXXb44bzI7n"
+          target="_blank"
+          >Art Sherpa Beginner's Acrylic Painting Course</a
+        >
+        |
+        <a href="https://www.youtube.com/@thankfulart" target="_blank"
+          >Thankful Art by Angela Anderson</a
+        >
+        |
+        <a href="https://www.youtube.com/@PaintingwithJane" target="_blank"
+          >Painting with Jane</a
+        >
+        |
+        <a href="https://www.youtube.com/@gingercooklive">Ginger Cook</a></span
+      >
+      <h2>SUPPLIES</h2>
+      <span
+        ><a href="https://www.jerrysartarama.com">Jerry's Artarama</a> |
+        <a href="https://www.utrechtart.com">Utrecht</a> |
+        <a href="https://www.thebrushguys.com/">The Brush Guys</a></span
+      >
+    </div>
+
+    <div class="signature">Coded by Tina Velez-Grey | @DesistDawdling</div>
+    <script>
+      function headingUpdate(newHeader) {
+        let heading = document.querySelector("h3");
+        heading.innerHTML = newHeader;
+      }
+      function newPainterButton() {
+        let name = prompt("What is your first name?");
+        let artists = prompt(
+          "Are you a beginner painter? Please type Yes or No"
+        );
+        artists = artists.trim();
+        artists = artists.toLowerCase();
+        if (artists === "yes") {
+          headingUpdate(`Hi, ${name}! Visit The Art Sherpa on YouTube today!`);
+        } else {
+          if (artists === "no") {
+            headingUpdate(
+              `Hi, ${name}! Search Acrylic Art tutorials on YouTube today!`
+            );
+          }
+        }
+      }
+      let infoButton = document.querySelector("button");
+      infoButton.addEventListener("click", newPainterButton);
+    </script>
+  </body>
+</html>
