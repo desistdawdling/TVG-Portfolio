@@ -1,13 +1,13 @@
 # TVG-Portfolio
 
-##<p>Coding and Professional Portfolio for Tina Velez-Grey</p>
+<p>Coding and Professional Portfolio for Tina Velez-Grey</p>
 <br />
 <a href="https://www.linkedin.com/in/tina-velez-grey-b83a5623/" target="_blank">LinkedIn Profile</a>
 <br />
 <a href="https://www.shecodes.io/graduates/72434-tina-velez-grey" target="_blank">SheCodes Profile</a>
 <br />
 
-### Coursera Certificates
+Coursera Certificates
 <p>Design</p>
 <a href="https://coursera.org/share/ca74bce326e25aeaf897a5cf5b2eb7b1" target="_blank">Introduction to Back-End Development</a>
 <a href="https://coursera.org/share/8618362512b7bfc49d7ababe3f4da262" target="_blank">Foundations of User Experience (UX) Design</a>
