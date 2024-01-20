@@ -7,10 +7,39 @@
     <title>Drum Kit</title>
     <style>
       body {
-        background-image: url("images/drummer-plays-drums.jpg");
+        background-image: url()
+      }
+
+      .background-image {
+        position: relative;
+      }
+
+      .bottomleft {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        font-size: 18px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        opacity: 0.3;
+      }
+
+      .keyboard {
+        display: block;
+        margin: auto;
+        width: 70%;
+      }
+
+      .sound {
+        display: block;
       }
 
       .key {
+        display: inline-block;
+        grid-row: 1;
         border: 3px solid black;
         border-radius: 10px;
         margin: 1rem;
@@ -35,10 +64,15 @@
   </head>
 
   <body>
-    <div class="key">
+    <div class="background-image">
+      <img src="../../images/drummer-plays-drums.jpg" alt="Drummer plays drums, pvproductions, Freepik" width="1000"
+        height="300">
+      <div class="bottomleft">Image by pvproductions on Freepik</div>
+    </div>
+    <span class="keyboard">
       <div data-key="65" class="key">
         <kbd>A</kbd>
-        <span class="sound">clap</span>
+        <div class="sound">clap</div>
       </div>
       <div data-key="83" class="key">
         <kbd>S</kbd>
@@ -72,16 +106,16 @@
         <kbd>L</kbd>
         <span class="sound">tink</span>
       </div>
-    </div>
-    <audio data-key="65" src="/01-JavaScript-DrumKit/sounds/clap.wav"></audio>
-    <audio data-key="83" src="/01-JavaScript-DrumKit/sounds/hihat.wav"></audio>
-    <audio data-key="68" src="/01-JavaScript-DrumKit/sounds/kick.wav"></audio>
-    <audio data-key="70" src="/01-JavaScript-DrumKit/sounds/openhat.wav"></audio>
-    <audio data-key="71" src="/01-JavaScript-DrumKit/sounds/boom.wav"></audio>
-    <audio data-key="72" src="/01-JavaScript-DrumKit/sounds/ride.wav"></audio>
-    <audio data-key="74" src="/01-JavaScript-DrumKit/sounds/snare.wav"></audio>
-    <audio data-key="75" src="/01-JavaScript-DrumKit/sounds/tom.wav"></audio>
-    <audio data-key="76" src="/01-JavaScript-DrumKit/sounds/tink.wav"></audio>
+    </span>
+    <audio data-key="65" src="./01-JavaScript-DrumKit/sounds/clap.wav"></audio>
+    <audio data-key="83" src="./01-JavaScript-DrumKit/sounds/hihat.wav"></audio>
+    <audio data-key="68" src="./01-JavaScript-DrumKit/sounds/kick.wav"></audio>
+    <audio data-key="70" src="./01-JavaScript-DrumKit/sounds/openhat.wav"></audio>
+    <audio data-key="71" src="./01-JavaScript-DrumKit/sounds/boom.wav"></audio>
+    <audio data-key="72" src="./01-JavaScript-DrumKit/sounds/ride.wav"></audio>
+    <audio data-key="74" src="./01-JavaScript-DrumKit/sounds/snare.wav"></audio>
+    <audio data-key="75" src="./01-JavaScript-DrumKit/sounds/tom.wav"></audio>
+    <audio data-key="76" src="./01-JavaScript-DrumKit/sounds/tink.wav"></audio>
     <script>
       function playSound(e) {
         const audio = document.querySelector('audio[data-key="${e.keycode}"]');
@@ -102,6 +136,5 @@
       window.addEventListener('keydown', playSound);
     </script>
   </body>
-  <footer>Image by pvproductions on Freepik</footer>
 
 </html>
