@@ -173,8 +173,8 @@
       <div class="dropdown">
         <button class="dropbtn">Challenges</button>
         <div class="dropdown-content">
-          <a href="/JavaScript/Javascript30/javascript30.html">Wes Bos' JavaScript30</a>
-          <a href="wwc-python.html">Women Who Code Days of Python</a>
+          <a href="./javascript30.html">Wes Bos' JavaScript30</a>
+          <a href="./wwc-python.html">Women Who Code Days of Python</a>
         </div>
       </div>
       <a href="#contact">Contact</a>
@@ -218,6 +218,18 @@
     </div>
 
     <div class="signature">Coded by Tina Velez-Grey | @DesistDawdling</div>
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </body>
 
 </html>
