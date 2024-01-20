@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=" https://cdn.jsdelivr.net/npm/handlebars@4.7.8/dist/cjs/handlebars.min.js "></script>
+  </head>
+
+  <body>
+    <script type="text/x-handlebars-template">
+    <ol>
+      {{#each list}}
+        <li> {{this.name}}</li>
+        {{/each}}
+    </ol>
+    <p>{{footer}}</p>
+  </script>
+    <div id="output">
+
+    </div>
+    <button onclick="fill_template()">
+      fill template
+    </button>
+    <p class="signature">{{footer}}</p>
+  </body>
+
+</html>
