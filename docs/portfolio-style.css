@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TVG</title>
-    <style>
+      
       @import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
@@ -99,11 +91,6 @@
         display: block;
       }
 
-      table {
-        border: 1px solid black;
-        table-layout: auto;
-        vertical-align: center;
-      }
 
       h1 {
         text-align: center;
@@ -136,73 +123,15 @@
       }
 
       img {
-        display: flex;
-        text-align: center;
-        max-width: 50%;
-        padding: 10px 0px 30px 0px;
-        margin: 0 auto;
-        border: 2px solid #4E579E;
-        box-shadow: 3px 5px 4px #4E579E;
-        background: #ececea;
+        display: block;
+        margin: 30px auto;
+        border: 1px solid #534c77;
+        border-radius: 15px;
+        height: auto;
+        max-width: 100%;
       }
 
       .signature {
         text-align: center;
         padding: 65px;
       }
-
-      .collection {
-        display: grid;
-        grid-template-columns: auto auto;
-      }
-
-      .linked-images {
-        grid-column: 1;
-        grid-row: 1;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="header-box">
-      <h1>Tina Velez-Grey</h1>
-    </div>
-    <div class="navbar">
-      <a href="./index.html">Home</a>
-      <div class="dropdown">
-        <button class="dropbtn">Portfolio</button>
-        <div class="dropdown-content">
-          <a href="./portfolio-a.html">Art</a>
-          <a href="./portfolio-c.html">Coding</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Challenges</button>
-        <div class="dropdown-content">
-          <a href="JavaScript/Javascript30/javascript30.html">Wes Bos' JavaScript30</a>
-          <a href="#">Women Who Code Days of Python</a>
-        </div>
-      </div>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <br />
-
-    <hr />
-    <div></div>
-
-    <h2>Women Who Code Days of Python</h2>
-    <h3>
-
-    </h3>
-    <div class="collection">
-      <div class="linked-images">
-        <img src="" />
-
-      </div>
-    </div>
-    </table>
-    <div class="signature">Coded by Tina Velez-Grey | @DesistDawdling</div>
-  </body>
-
-</html>
