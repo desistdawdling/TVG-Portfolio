@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TVG</title>
-    <link rel="stylesheet" href="./portfolio-style.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <div w3-include-html="header.html"></div>
+    <link rel="stylesheet" href="portfolio-style.css">
   </head>
 
   <body>
@@ -19,14 +21,10 @@
 
     </p>
 
-    <div class="quicklinks">
-      <h2>Professional Profiles</h2>
-      <span><a href="https://www.linkedin.com/in/tina-velez-grey-b83a5623/" target="_blank">LinkedIn Profile</a> |
-        <a href="https://www.shecodes.io/graduates/72434-tina-velez-grey" target="_blank">SheCodes Profile</a> |
-        <a href="https://github.com/desistdawdling/TVG-Portfolio/tree/main" target="_blank">github</a></span>
-    </div>
+    <div w3-include-html="quicklinks.html"></div>
+    <div w3-include-html="footer.html"></div>
+    <script>w3.includeHTML();</script>
 
-    <div class="signature">Coded by Tina Velez-Grey | @DesistDawdling</div>
     <script type="text/javascript">
       (function (l) {
         if (l.search[1] === '/') {
