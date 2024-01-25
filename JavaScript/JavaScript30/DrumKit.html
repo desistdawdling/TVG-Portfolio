@@ -7,11 +7,8 @@
     <title>Drum Kit</title>
     <style>
       body {
-        background-image: url()
-      }
-
-      .background-image {
-        position: relative;
+        background-image: url("https://img.freepik.com/free-photo/drummer-rehearsing-drums-before-rock-concert-man-recording-music-drum-set-with-show-effect-form-flour_155003-32374.jpg");
+        background-size: cover;
       }
 
       .bottomleft {
@@ -64,11 +61,9 @@
   </head>
 
   <body>
-    <div class="background-image">
-      <img src="../images/drummer-plays-drums.jpg" alt="Drummer plays drums, pvproductions, Freepik" width="1000"
-        height="300">
-      <div class="bottomleft">Image by pvproductions on Freepik</div>
-    </div>
+    <div class="bottomleft"><a
+        href="https://www.freepik.com/free-photo/drummer-rehearsing-drums-before-rock-concert-man-recording-music-drum-set-with-show-effect-form-flour_13635720.htm#query=drums%20player&position=0&from_view=keyword&track=ais&uuid=ffb9ea15-292d-427b-acf3-5c2d21a9d602">Image
+        by master1305</a> on Freepik</div>
     <span class="keyboard">
       <div data-key="65" class="key">
         <kbd>A</kbd>
@@ -107,33 +102,25 @@
         <span class="sound">tink</span>
       </div>
     </span>
-    <audio data-key="65" src="./01-JavaScript-DrumKit/sounds/clap.wav"></audio>
-    <audio data-key="83" src="./01-JavaScript-DrumKit/sounds/hihat.wav"></audio>
-    <audio data-key="68" src="./01-JavaScript-DrumKit/sounds/kick.wav"></audio>
-    <audio data-key="70" src="./01-JavaScript-DrumKit/sounds/openhat.wav"></audio>
-    <audio data-key="71" src="./01-JavaScript-DrumKit/sounds/boom.wav"></audio>
-    <audio data-key="72" src="./01-JavaScript-DrumKit/sounds/ride.wav"></audio>
-    <audio data-key="74" src="./01-JavaScript-DrumKit/sounds/snare.wav"></audio>
-    <audio data-key="75" src="./01-JavaScript-DrumKit/sounds/tom.wav"></audio>
-    <audio data-key="76" src="./01-JavaScript-DrumKit/sounds/tink.wav"></audio>
+
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+
     <script>
-      function playSound(e) {
-        const audio = document.querySelector('audio[data-key="${e.keycode}"]');
-        const key = document(querySelector('.key[data-key="${e.keycode}"]'));
-        if (!audio) return; //stops function from running
-        audio.currentTime = 0; //rewinds to start so can play multiple times
+      window.addEventListener('keydown', function (e) {
+        const audio = document.querySelector(`audio[data-key="${e.keycode}"]`);
+        if (!audio) return; //stop function from running
+
         audio.play();
-        key.classlist.add('playing');
-      };
 
-      function removeTransition(e) {
-        if (e.propertName !== 'transform'); //skip if not a transform
-        this.classList.remove('playing');
-      }
-
-      const keys = document.querySelectorAll('.key');
-      keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-      window.addEventListener('keydown', playSound);
+      });
     </script>
   </body>
 
