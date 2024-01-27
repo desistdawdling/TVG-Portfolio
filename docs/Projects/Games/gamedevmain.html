@@ -1,1 +1,47 @@
-<p>Placeholder</p>
+!DOCTYPE html>
+<html lang="en">
+
+  <body>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <div w3-include-html="header.html"></div>
+    <span><img src="" /></span>
+    <h2>Tutorial and Test Projects</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Image Preview</th>
+          <th>Game Link</th>
+          <th>Tutorial Link</th>
+          <th>Game Engine</th>
+          <th>Programming Language</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Coming Soon</td>
+          <td>Coming Soon</td>
+          <td><a href="https://docs.godotengine.org/en/stable/getting_started/first_2d_game/index.html">Godot Docs: Your
+              first 2D game</a></td>
+          <td><a href="https://godotengine.org/">Godot</a></td>
+          <td>GDScript</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <script>w3.includeHTML()</script>
+    <script type="text/javascript">
+        (function (l) {
+          if (l.search[1] === '/') {
+            var decoded = l.search.slice(1).split('&').map(function (s) {
+              return s.replace(/~and~/g, '&')
+            }).join('?');
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+            );
+          }
+        }(window.location))
+    </script>
+  </body>
+
+</html>
