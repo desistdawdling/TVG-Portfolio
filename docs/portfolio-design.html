@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <body>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <div w3-include-html="header.html"></div>
+    <div w3-include-html="quicklinks.html"></div>
+    <script>w3.includeHTML();</script>
+    <h2>Capstone Projects</h2>
+    <div class=container-design>
+      <div class="design-item-1"><img src="images/maya_angelou_verse.jpg"></div>
+      <div class="design-item-2"><img src="images/save_the_tigers.jpg" </div>
+        <div class="design-item-3"> </div>
+      </div>
+
+
+
+      <script>w3.includeHTML()</script>
+      <script type="text/javascript">
+          (function (l) {
+            if (l.search[1] === '/') {
+              var decoded = l.search.slice(1).split('&').map(function (s) {
+                return s.replace(/~and~/g, '&')
+              }).join('?');
+              window.history.replaceState(null, null,
+                l.pathname.slice(0, -1) + decoded + l.hash
+              );
+            }
+          }(window.location))
+      </script>
+  </body>
+
+</html>
