@@ -11,6 +11,8 @@ public class Main{
 
     public static void main (String [] numberGuessingGame){
         Scanner sc = new Scanner(System.in);
+        int K = 5;
+        int startScore = 0;
         int newScore = 0;
         int playAgain = 0;
         boolean willPlayAgain = true;
@@ -19,20 +21,20 @@ public class Main{
         }
         else
             while (willPlayAgain) {
+                startScore = (K+1) * 10;
                 newScore+=newScore;
                 // Generate the numbers
-                int number = 1 + (int)(100 * Math.random());
+                int number = 1 + (int)(50 * Math.random());
                 // Number of guesses allowed 
-                int K = 5;
                 int i = 0;
                 int guess;
                 // Score tracking
      
-                System.out.println("A number is chosen between 1 and 100. Guess the number within 5 trials.");
+                System.out.println("A number is chosen between 1 and 50. Guess the number within 5 trials.");
      
                 // Loop over number of trials (int K)
                 for (i = 0; i < K; i++) {
-     
+                    startScore -= 10;
                     System.out.println("Guess the number:");
      
                     // Take input for guessing
@@ -52,14 +54,15 @@ public class Main{
                         System.out.println("The number is less than " + guess);
                     }
                 }
-                newScore += (i * 10);
-                System.out.println("Your Score is: " + newScore);
+                newScore += (startScore);
+                
          
                 if (i == K) {
-                    System.out.println(
-                        "You have no more tries left.");
-         
+                    System.out.println("You have no more tries left.");
                     System.out.println("The number was " + number);
+                    newScore-=10;
+                    
+                System.out.println("Your Score is: " + newScore);
                         
                 System.out.println("Do you want to play again? 0 for Yes or 1 for No: ");
                 playAgain = sc.nextInt();
@@ -69,3 +72,5 @@ public class Main{
             }
         }
     }
+
+
