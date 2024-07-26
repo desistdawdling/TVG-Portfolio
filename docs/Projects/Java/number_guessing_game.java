@@ -71,4 +71,10 @@ public class Main{
                 else break;
             }
         }
+<<<<<<< HEAD
     }
+=======
+    }
+
+
+>>>>>>> 123b7b20f7fea03182ecdc68958f32b6251a8c76
