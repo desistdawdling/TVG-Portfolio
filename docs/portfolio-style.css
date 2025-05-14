@@ -169,5 +169,11 @@ td {
 }
 
 .design-item-image {
-max-width: 50%;
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #534c77;
+  border-radius: 15px;
+  height: auto;
+  width: auto;
+  max-width: 50%;
 }
