@@ -129,6 +129,7 @@ img {
   border: 1px solid #534c77;
   border-radius: 15px;
   height: auto;
+  width: auto;
   max-width: 20 px;
 }
 
@@ -166,14 +167,4 @@ th {
 td {
   border: 1.5px solid black;
   padding: 10px;
-}
-
-.design-item-image {
-  display: block;
-  margin: 30px auto;
-  border: 1px solid #534c77;
-  border-radius: 15px;
-  height: auto;
-  width: auto;
-  max-width: 50%;
 }
