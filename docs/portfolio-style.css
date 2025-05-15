@@ -133,6 +133,10 @@ img {
   max-width: 20 px;
 }
 
+.image-sample {
+  max-width: fit-content;
+}
+
 .quicklinks {
   display: block;
   text-align: center;
