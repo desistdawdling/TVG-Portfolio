@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
   font-family: 'Overlock';
@@ -168,12 +169,7 @@ td {
   padding: 10px;
 }
 
-/*Styles for Game site*/
-
-@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/*GAME PORTFOLIO*/
 
 body .game{
   font-family: 'Overlock';
@@ -264,7 +260,7 @@ body .game{
 }
 
 
-h1 .game {
+.game-h1 {
   text-align: center;
   font-weight: 600;
   font-family: 'VT323';
